@@ -1,0 +1,48 @@
+{
+  "description": "Licensed to Fix safety guard (PreToolUse deny/ask) and identifier redaction (PostToolUse updatedToolOutput).",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/scripts/pre-tool-guard.js"],
+            "timeout": 15,
+            "onFailure": "block",
+            "statusMessage": "Licensed to Fix safety check"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/scripts/post-tool-redact.js"],
+            "timeout": 15,
+            "statusMessage": "Redacting identifiers"
+          }
+        ]
+      }
+    ],
+    "PostToolUseFailure": [
+      {
+        "matcher": "Bash|PowerShell",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node",
+            "args": ["${CLAUDE_PLUGIN_ROOT}/hooks/scripts/post-tool-redact.js"],
+            "timeout": 15,
+            "statusMessage": "Redacting failure text"
+          }
+        ]
+      }
+    ]
+  }
+}

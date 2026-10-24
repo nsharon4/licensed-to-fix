@@ -1,0 +1,15 @@
+=== SYNTHETIC FIXTURE — not from a real PC ===
+ComputerName: DESKTOP-SYNTH01
+UserName: janedoe
+User profile: C:\Users\janedoe\Documents\report.txt
+IPv4 Address: 192.168.10.55
+Public IPv4: 203.0.113.10
+IPv6: 2001:db8:85a3::8a2e:370:7334
+MAC: AA:BB:CC:DD:EE:01
+Email: jane.doe@example.com
+Domain account: CONTOSO\janedoe
+SID: S-1-5-21-111111111-222222222-333333333-1001
+SerialNumber: SYNTHSERIAL001
+Product key: AAAAA-BBBBB-CCCCC-DDDDD-EEEEE
+Localhost stays: 127.0.0.1
+Default route stays literal in docs: 0.0.0.0

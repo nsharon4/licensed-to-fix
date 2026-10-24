@@ -1,0 +1,25 @@
+{
+  "name": "licensed-to-fix-marketplace",
+  "owner": {
+    "name": "Nir Sharon",
+    "url": "https://www.linkedin.com/in/nir-sharon-270439169"
+  },
+  "metadata": {
+    "description": "Marketplace for the Licensed to Fix plugin.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "licensed-to-fix",
+      "source": "./",
+      "description": "An IT helpdesk agent plugin for Claude Code.",
+      "version": "2.7.0",
+      "homepage": "https://licensed-to-fix.app",
+      "repository": "https://github.com/nsharon4/licensed-to-fix",
+      "author": {
+        "name": "Nir Sharon",
+        "url": "https://www.linkedin.com/in/nir-sharon-270439169"
+      }
+    }
+  ]
+}

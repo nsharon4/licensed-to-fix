@@ -1,0 +1,21 @@
+{
+  "name": "licensed-to-fix",
+  "displayName": "Licensed to Fix",
+  "version": "2.7.0",
+  "description": "An IT helpdesk agent plugin for Claude Code. Read-only triage on Windows PCs, root-cause hunt, one approval per fix with undo, recurrence recheck, local tickets. Safety guard and identifier redaction enforced by hooks.",
+  "author": {
+    "name": "Nir Sharon",
+    "url": "https://www.linkedin.com/in/nir-sharon-270439169"
+  },
+  "homepage": "https://licensed-to-fix.app",
+  "repository": "https://github.com/nsharon4/licensed-to-fix",
+  "license": "MIT",
+  "keywords": [
+    "it-support",
+    "troubleshooting",
+    "powershell",
+    "desktop-support",
+    "hebrew",
+    "helpdesk"
+  ]
+}
